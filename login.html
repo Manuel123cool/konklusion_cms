@@ -1,0 +1,69 @@
+<!--
+    Konklusion_cms: open source blog manager
+    Copyright (C) 2020  Manuel Maria Kümpel
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOYTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cms</title>
+        <link href="css/login.css" rel="stylesheet">
+    </head>
+    <body>
+        <main>
+            <h2>Upload-Page</h2>
+            <form action="php/upload.php">
+                <label for="page">Page:</label>
+                <select name="page" id="page">
+                    <option value="main-page">main-page</option>
+                    <option value="new-thoughts">new-thoughts</option>
+                    <option value="thoughts-archiv">thoughts-archiv</option>
+                </select>
+                <br>
+                <label for="mode">Mode:</label>
+                <select name="mode" id="mode">
+                    <option value="new-insert">new-insert</option>
+                    <option value="edit">edit</option>
+                    <option value="insert">insert</option>
+                    <option value="delete">delete</option>
+                </select>
+                <br>
+                <label for="article_number">Article number:</label>
+                <input type="number" name="article_number" id="article_number" min="1" value="1">
+                <br>
+                <label for="which_text">Which text:</label>
+                <select name="which_text" id="which_text">
+                    <option value="heading">Heading</option>
+                    <option value="text">Text</option>
+                </select>
+                <br>
+                <textarea rows="4" cols="40" name="text" id="text"></textarea> 
+                <br>
+                <hr>
+                <p>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="input_box"> 
+                </p>
+                <p>
+                    <label for="passwort">Password: </label>
+                    <input type="password" id="passwort" name="password" class="input_box"> 
+                </p>
+                <input type="submit">
+            </form>
+        </main>
+    </body>
+</html>

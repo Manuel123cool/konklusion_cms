@@ -1,0 +1,50 @@
+<!--
+    Konklusion_cms: open source blog manager
+    Copyright (C) 2020  Manuel Maria Kümpel
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOYTYPE html>
+<html>
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=#replace"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '#replace');
+        </script>
+        
+        <meta charset="UTF-8">
+        <title>Konklusionen</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h1><a id="header" href="#">Hundefutter</a></h1>
+        </header>
+        <nav>
+            <a href="#" id="newthoughts">Neue Gedanken</a>
+            <a href="#" id="thougthsarchiv">Gedanken Archiv</a>
+        </nav>
+        <main id="insertwrapper">
+        </main>
+        <script src="js/dom.js" type="text/javascript"></script>
+        <script src="js/ajax.js" type="text/javascript"></script>
+        <script src="js/event.js" type="text/javascript"></script>
+    </body>
+</html>

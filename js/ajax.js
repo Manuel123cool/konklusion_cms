@@ -18,6 +18,17 @@
 "use strict";
 let ajaxByDOM = {
     mainPage: function() {
+        try {
+            if (insert.mainPageArray[0].length) 
+            {
+                insert.mainPage();
+                return;
+            }
+        } catch (arr) 
+        {
+            console.log(arr);
+        }
+
         let xmlhttp0 = new XMLHttpRequest();
         xmlhttp0.addEventListener('readystatechange', (e) => {
             if (xmlhttp0.readyState==4 && xmlhttp0.status==200) {

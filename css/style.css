@@ -29,3 +29,10 @@ aside {
     margin-left: auto;
     margin-right: auto;
 }
+
+@media only screen and (max-width: 600px) {
+    aside a { 
+        font-size: 30;
+        margin-right: 10px;
+    }    
+}
